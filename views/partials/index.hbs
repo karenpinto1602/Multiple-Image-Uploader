@@ -1,0 +1,25 @@
+{{!-- section --}}
+<section class="section my-4">
+    <div class="container text-center">
+        <div class="title py-5">
+            <h1>Node Image Uploader</h1>
+            <p class="subtitle">Upload Images to the <strong>Server</strong></p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <form action="/uploadMultiple" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="file" class="form-control" name="images" id="formFile" multiple>
+                        </div>
+                        <div class="col-2">
+                            <input type="submit" class="btn btn-warning" value="Upload Images">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{{!-- /section --}}

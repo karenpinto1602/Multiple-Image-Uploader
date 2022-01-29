@@ -10,6 +10,8 @@ app.use(express.json()); //this allows us to post raw json data when a post requ
 // serving static files
 app.use(express.static(path.join(__dirname,'public')));
 
+// connect MongoDB databsse
+require('./server/database/database')();
 
 // setup view engine
 app.set('view engine','hbs');

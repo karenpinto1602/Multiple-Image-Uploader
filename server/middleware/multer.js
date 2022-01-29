@@ -9,7 +9,7 @@ var storage = multer.diskStorage({
     filename:function(req,file,cb){
         // image.jpg then ext will be jpg
         var ext = file.originalname.substr(file.originalname.lastIndexOf('.'));
-        cb(null,file.filename+'-'+Date.now()+ext);
+        cb(null,file.fieldname+'-'+Date.now()+ext);
     }
 })
 
